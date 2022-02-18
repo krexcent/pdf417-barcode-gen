@@ -79,14 +79,14 @@ function getRndDate() {
 }
 function getRndExpiryDate(years) {
   date = "";
-  month = getRndInteger(1, 13);
+  month = 1;
   if (month <= 9) {
     date = "0" + month.toString(10);
   }
   else {
     date = month.toString(10);
   }
-  day = getRndInteger(1, 29);
+  day = 7;
   if (day <= 9) {
     date = date + "0" + day.toString(10);
   }
